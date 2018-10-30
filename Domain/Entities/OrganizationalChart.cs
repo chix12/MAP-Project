@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Domain.Entities
 {
-    public class Profile
+    public class OrganizationalChart
     {
-        public int idProfile { get; set; }
-        public String profileName { get; set; }
+
     }
 }

@@ -8,8 +8,8 @@ namespace Domain
 {
     public class Competence
     {
-        public int idCompetence { get; set; }
-        public String competenceName { get; set; }
-        public int rank { get; set; }
+        public int IdCompetence { get; set; }
+        public String CompetenceName { get; set; }
+        public int Rank { get; set; }
     }
 }
