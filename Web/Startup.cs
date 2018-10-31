@@ -14,6 +14,20 @@ namespace Web
         {
             ConfigureAuth(app);
             CreateRoles();
+            CreateUsers();
+        }
+        public void CreateUsers ()
+        {
+            var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(db));
+            var user = new ApplicationUser();
+            user.Email = "admin@admin.com";
+            //user.UserName = user.Email;
+                  
+            var check = UserManager.Create(user,"123@Dmin");  
+            if (check.Succeeded) {
+                UserManager.AddToRole(user.Id, "Admin");
+            }
+
         }
         public void CreateRoles()
         {
