@@ -4,7 +4,6 @@ C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\EntityFramework.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.Owin.dll
@@ -20,7 +19,6 @@ C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\EntityFramework.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Domain\bin\Debug\Microsoft.Owin.xml

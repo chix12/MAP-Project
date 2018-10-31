@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Client : IdentityUser
+    public class Client : IdentityUser  
     {
+        [Key]
         public int IdClient { get; set; }
         public String Type { get; set; }
         public String Category { get; set; }
@@ -19,6 +20,5 @@ namespace Domain.Entities
         public virtual ICollection<Project> Projects { get; set; }
         public virtual ICollection<Message> Messages { get; set; }
         public virtual ICollection<ClientRequestForm> ClientRequestForm { get; set; }
-        public virtual OrganizationalChart OrganizationalChart { get; set; }
     }
 }

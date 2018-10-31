@@ -27,3 +27,5 @@ C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\bin\Debug\Ne
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Data.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Data.pdb
+C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Data.Migrations.GenerateDB.resources
+C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Data.csproj.GenerateResource.Cache

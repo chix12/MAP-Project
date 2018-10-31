@@ -9,7 +9,5 @@ namespace Domain.Entities
     public class JobSeeker : Ressource
     {
         public String Specialty { get; set; }
-        public virtual JobRequest JobRequest { get; set; }
-        public virtual File File { get; set; }
     }
 }
