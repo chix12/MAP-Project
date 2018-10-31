@@ -29,3 +29,4 @@ C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Da
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Data.pdb
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Data.Migrations.GenerateDB.resources
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Data.csproj.GenerateResource.Cache
+C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Data\obj\Debug\Data.Migrations.WithForeignKey.resources

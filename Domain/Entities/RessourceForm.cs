@@ -15,6 +15,9 @@ namespace Domain
         public String RessourceFirstName { get; set; }
         public String RessourceLastName { get; set; }
         public virtual ICollection<Competence> Competences { get; set; }
+      /*  [ForeignKey("IdRessource")]
+        public virtual Ressource Ressource { get; set; }
+        public int? IdRessource { get; set; }*/
 
     }
 }

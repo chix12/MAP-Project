@@ -10,7 +10,7 @@ namespace Domain.Entities
     public class RecruitementManager
     {
         [Key]
-        public int idManager { get; set; }
+        public int IdManager { get; set; }
         public virtual ICollection<Meeting> Meetings { get; set; }
     }
 }

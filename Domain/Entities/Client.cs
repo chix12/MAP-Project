@@ -2,13 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Client : IdentityUser  
+    public class Client  
     {
         [Key]
         public int IdClient { get; set; }
@@ -20,5 +21,8 @@ namespace Domain.Entities
         public virtual ICollection<Project> Projects { get; set; }
         public virtual ICollection<Message> Messages { get; set; }
         public virtual ICollection<ClientRequestForm> ClientRequestForm { get; set; }
+       /* [ForeignKey("IdChart")]
+        public virtual OrganizationalChart OrganizationalChart { get; set; }
+        public virtual int? IdChart { get; set; }*/
     }
 }

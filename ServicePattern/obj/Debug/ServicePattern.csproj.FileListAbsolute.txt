@@ -5,7 +5,6 @@ C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bi
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.Owin.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.Owin.Security.Cookies.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.Owin.Security.dll
@@ -16,7 +15,6 @@ C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bi
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.Owin.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.Owin.Security.Cookies.xml
@@ -24,3 +22,6 @@ C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bi
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\obj\Debug\ServicePattern.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\obj\Debug\ServicePattern.pdb
+C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\obj\Debug\ServicePattern.csprojResolveAssemblyReference.cache
+C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\ServicePattern\bin\Debug\Microsoft.AspNet.Identity.Owin.xml

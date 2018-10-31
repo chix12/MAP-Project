@@ -13,5 +13,6 @@ namespace Domain
         public int IdCompetence { get; set; }
         public String CompetenceName { get; set; }
         public int Rank { get; set; }
+        public virtual ICollection<RessourceForm> RessourceForms { get; set; }
     }
 }
