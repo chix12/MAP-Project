@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Client
+    public class Client : IdentityUser
     {
         public int IdClient { get; set; }
         public String Type { get; set; }
