@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Client  
+    public class Client : User
     {
         [Key]
         public int IdClient { get; set; }
@@ -21,8 +21,9 @@ namespace Domain.Entities
         public virtual ICollection<Project> Projects { get; set; }
         public virtual ICollection<Message> Messages { get; set; }
         public virtual ICollection<ClientRequestForm> ClientRequestForm { get; set; }
-       /* [ForeignKey("IdChart")]
-        public virtual OrganizationalChart OrganizationalChart { get; set; }
-        public virtual int? IdChart { get; set; }*/
+        /* [ForeignKey("IdChart")]
+         public virtual OrganizationalChart OrganizationalChart { get; set; }
+         public virtual int? IdChart { get; set; }*/
     }
+
 }

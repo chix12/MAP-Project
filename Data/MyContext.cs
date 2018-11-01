@@ -1,5 +1,6 @@
 ﻿using Domain;
 using Domain.Entities;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -15,7 +16,7 @@ namespace Data
         {
 
         }
-        public DbSet <Client> Clients { get; set; }
+        public DbSet <User> Users { get; set; }
         public DbSet<ClientRequestForm> ClientRequestForms { get; set; }
         public DbSet<Competence> Competences { get; set; }
         public DbSet<File> Files { get; set; }
@@ -26,8 +27,8 @@ namespace Data
         public DbSet<OrganizationalChart> OrganizationalCharts { get; set; }
         public DbSet<Profile> Profiles { get; set; }
         public DbSet<Project> Projects { get; set; }
-        public DbSet<RecruitementManager> RecruitementManagers { get; set; }
-        public DbSet<Ressource> Ressources { get; set; }
+        //public DbSet<RecruitementManager> RecruitementManagers { get; set; }
+       // public DbSet<Ressource> Ressources { get; set; }
         public DbSet<RessourceForm> RessourceForms { get; set; }
         public DbSet<Vaccations> Vaccations { get; set; }
     }

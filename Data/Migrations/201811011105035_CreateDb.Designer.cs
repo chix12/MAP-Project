@@ -7,13 +7,13 @@ namespace Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class WithForeignKey : IMigrationMetadata
+    public sealed partial class CreateDb : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(WithForeignKey));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateDb));
         
         string IMigrationMetadata.Id
         {
-            get { return "201810312128312_WithForeignKey"; }
+            get { return "201811011105035_CreateDb"; }
         }
         
         string IMigrationMetadata.Source

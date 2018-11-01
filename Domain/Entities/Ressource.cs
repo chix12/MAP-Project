@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Ressource
+    public class Ressource : User
     {
         [Key]
         public int IdRessource { get; set; }

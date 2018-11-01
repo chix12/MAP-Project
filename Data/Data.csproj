@@ -85,13 +85,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201810311549544_GenerateDB.cs" />
-    <Compile Include="Migrations\201810311549544_GenerateDB.Designer.cs">
-      <DependentUpon>201810311549544_GenerateDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810312128312_WithForeignKey.cs" />
-    <Compile Include="Migrations\201810312128312_WithForeignKey.Designer.cs">
-      <DependentUpon>201810312128312_WithForeignKey.cs</DependentUpon>
+    <Compile Include="CustomUserStore.cs" />
+    <Compile Include="Migrations\201811011105035_CreateDb.cs" />
+    <Compile Include="Migrations\201811011105035_CreateDb.Designer.cs">
+      <DependentUpon>201811011105035_CreateDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
@@ -108,11 +105,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201810311549544_GenerateDB.resx">
-      <DependentUpon>201810311549544_GenerateDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810312128312_WithForeignKey.resx">
-      <DependentUpon>201810312128312_WithForeignKey.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811011105035_CreateDb.resx">
+      <DependentUpon>201811011105035_CreateDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
