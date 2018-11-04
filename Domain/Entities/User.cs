@@ -13,8 +13,8 @@ namespace Domain.Entities
 
     public class User : IdentityUser <int, Login, UserRole, Claim>
     {
-        [Key]
-        public int UserId { get; set;}
+        //[Key]
+        //public int UserId { get; set;}
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User, int> manager)
         {
             // Note the authenticationType must match the one defined in

@@ -9,9 +9,9 @@ using System.Data.Entity;
 
 namespace Data
 {
-    class CustomUserStore : UserStore<User, Role, int, Login, UserRole, Claim>
+    public class CustomUserStore : UserStore<User, Role, int, Login, UserRole, Claim>
     {
-        public CustomUserStore(MyContext context) : base(context)
+        public CustomUserStore(MyContext ctx) : base(ctx)
         {
 
         }
