@@ -12,7 +12,7 @@ namespace Domain
 {
     public class Ressource : User
     {
-        [Key]
+      //  [Key]
         public int IdRessource { get; set; }
         //public ContractType type { get; set; }
         public int Rating { get; set; }

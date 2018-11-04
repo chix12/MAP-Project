@@ -85,9 +85,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IServiceClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceClient.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{B3791D34-0341-4A29-85ED-01C569095BF3}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{aa38ba50-00e2-4e94-9fce-65d2c13b4f4e}</Project>
       <Name>Domain</Name>

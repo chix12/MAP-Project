@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class ClientRequestForm
+    public class ClientRequestForm : Client
     {
         [Key]
         public int IdForm { get; set; }
-        public String Type { get; set; }
+        //public String Type { get; set; }
         public int Duration { get; set; }
         public String Description { get; set; }
         public String Requirements { get; set; }

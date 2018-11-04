@@ -9,11 +9,11 @@ using System.Data.Entity;
 
 namespace Data
 {
-   /* class CustomUserStore : UserStore<User, Role, int, Login, UserRole, Claim>
+    class CustomUserStore : UserStore<User, Role, int, Login, UserRole, Claim>
     {
         public CustomUserStore(MyContext context) : base(context)
         {
 
         }
-    }*/
+    }
 }

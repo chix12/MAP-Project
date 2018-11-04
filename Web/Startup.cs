@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using System;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
+using Microsoft.Owin.Security.Cookies;
 using Owin;
 using Web.Models;
 
@@ -14,21 +16,18 @@ namespace Web
         {
             ConfigureAuth(app);
             CreateRoles();
-            CreateUsers();
-        }
-        public void CreateUsers ()
-        {
-            var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(db));
-            var user = new ApplicationUser();
-            user.Email = "admin@admin.com";
-            //user.UserName = user.Email;
-                  
-            var check = UserManager.Create(user,"123@Dmin");  
-            if (check.Succeeded) {
-                UserManager.AddToRole(user.Id, "Admin");
-            }
+
+
+           // OwinInit(app);
+
+            app.UseCookieAuthentication(new CookieAuthenticationOptions
+            {
+                AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
+                LoginPath = new PathString("/Account/Login")
+            });
 
         }
+
         public void CreateRoles()
         {
             var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(db));

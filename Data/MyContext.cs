@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace Data
 {
-    public class MyContext : DbContext
+    public class MyContext : IdentityDbContext<User, Role, int, Login, UserRole, Claim>
     {
         public MyContext() : base ("Name=Alias")
         {
 
         }
-        public DbSet <User> Users { get; set; }
+        //public DbSet <User> Users { get; set; }
         public DbSet<ClientRequestForm> ClientRequestForms { get; set; }
         public DbSet<Competence> Competences { get; set; }
         public DbSet<File> Files { get; set; }

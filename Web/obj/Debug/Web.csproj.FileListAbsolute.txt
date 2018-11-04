@@ -92,3 +92,5 @@ C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Web\bin\Microsoft
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Web\obj\Debug\Web.dll
 C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Web\obj\Debug\Web.pdb
+C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Web\bin\Data.dll
+C:\Users\Kuro\documents\visual studio 2015\Projects\ProjectMAP\Web\bin\Data.pdb

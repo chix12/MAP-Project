@@ -11,7 +11,7 @@ namespace Domain.Entities
 {
     public class Client : User
     {
-        [Key]
+       // [Key]
         public int IdClient { get; set; }
         public String Type { get; set; }
         public String Category { get; set; }
