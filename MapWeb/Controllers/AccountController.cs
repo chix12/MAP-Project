@@ -164,7 +164,7 @@ namespace MapWeb.Controllers
 
                         {
                             // create new volunteer and map form values to the instance
-                            User v = new Client { UserName = model.Email, Email = model.Email };
+                            User v = new Client { UserType = "Client",  UserName = model.Email, Email = model.Email };
                             result = await UserManager.CreateAsync(v, model.Password);
 
                             // Add volunteer role to the new User
@@ -185,7 +185,7 @@ namespace MapWeb.Controllers
                     case MapDomain.Entities.UserType.Resource:
                         {
                             // create new Ngo and map form values to the instance
-                            User res = new Ressource { UserName = model.Email, Email = model.Email };
+                            User res = new Ressource { UserType = "Resource", UserName = model.Email, Email = model.Email };
                             result = await UserManager.CreateAsync(res, model.Password);
 
                             // Add Ngo role to the new User

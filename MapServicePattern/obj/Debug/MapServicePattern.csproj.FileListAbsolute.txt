@@ -122,3 +122,34 @@ C:\Users\monia\Desktop\PIFinal2\PIFinal2\MapServicePattern\bin\Debug\MapDomain.p
 C:\Users\monia\Desktop\PIFinal2\PIFinal2\MapServicePattern\obj\Debug\MapServicePattern.csprojResolveAssemblyReference.cache
 C:\Users\monia\Desktop\PIFinal2\PIFinal2\MapServicePattern\obj\Debug\MapServicePattern.dll
 C:\Users\monia\Desktop\PIFinal2\PIFinal2\MapServicePattern\obj\Debug\MapServicePattern.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\MapServicePattern.dll.config
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\MapServicePattern.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\MapServicePattern.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\EntityFramework.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\MapData.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.Owin.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Owin.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\MapDomain.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\MapData.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\EntityFramework.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.Owin.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\bin\Debug\MapDomain.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\obj\Debug\MapServicePattern.csprojResolveAssemblyReference.cache
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\obj\Debug\MapServicePattern.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapServicePattern\obj\Debug\MapServicePattern.pdb

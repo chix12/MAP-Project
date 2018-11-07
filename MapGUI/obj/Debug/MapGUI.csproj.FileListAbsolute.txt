@@ -144,3 +144,38 @@ C:\Users\monia\Desktop\PIFinal2\PIFinal2\MapGUI\bin\Debug\Microsoft.Owin.Securit
 C:\Users\monia\Desktop\PIFinal2\PIFinal2\MapGUI\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\Users\monia\Desktop\PIFinal2\PIFinal2\MapGUI\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 C:\Users\monia\Desktop\PIFinal2\PIFinal2\MapGUI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapGUI.exe.config
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\obj\Debug\MapGUI.exe
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\obj\Debug\MapGUI.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapGUI.exe
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapGUI.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\EntityFramework.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapData.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapDomain.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapService.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapServicePattern.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.Owin.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Owin.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapData.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapDomain.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapServicePattern.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\MapService.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\EntityFramework.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.Owin.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapGUI\obj\Debug\MapGUI.csprojResolveAssemblyReference.cache
