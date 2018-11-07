@@ -94,9 +94,9 @@
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="MapContext.cs" />
-    <Compile Include="Migrations\201811061747083_MAPMIGRATION.cs" />
-    <Compile Include="Migrations\201811061747083_MAPMIGRATION.Designer.cs">
-      <DependentUpon>201811061747083_MAPMIGRATION.cs</DependentUpon>
+    <Compile Include="Migrations\201811071444391_migration.cs" />
+    <Compile Include="Migrations\201811071444391_migration.Designer.cs">
+      <DependentUpon>201811071444391_migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,8 +112,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811061747083_MAPMIGRATION.resx">
-      <DependentUpon>201811061747083_MAPMIGRATION.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811071444391_migration.resx">
+      <DependentUpon>201811071444391_migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

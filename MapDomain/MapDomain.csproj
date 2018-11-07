@@ -97,7 +97,7 @@
     <Compile Include="Entities\Profile.cs" />
     <Compile Include="Entities\Project.cs" />
     <Compile Include="Entities\ClientRequestForm.cs" />
-    <Compile Include="Entities\RecruitementManager.cs" />
+    <Compile Include="Entities\Administrator.cs" />
     <Compile Include="Entities\Ressource.cs" />
     <Compile Include="Entities\RessourceForm.cs" />
     <Compile Include="Entities\User.cs" />

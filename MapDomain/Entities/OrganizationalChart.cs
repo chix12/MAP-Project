@@ -12,11 +12,13 @@ namespace MapDomain.Entities
     {
         [Key]
         public int IdChart { get; set; }
-        [ForeignKey("IdRessource")]
+
         public virtual Ressource Ressource { get; set; }
+        [ForeignKey("Ressource")]
         public int? IdRessource { get; set; }
-        [ForeignKey("IdClient")]
+       
         public virtual Client Client { get; set; }
+        [ForeignKey("Client")]
         public int? IdClient { get; set; }
         [ForeignKey("IdProject")]
         public virtual Project Project { get; set; }

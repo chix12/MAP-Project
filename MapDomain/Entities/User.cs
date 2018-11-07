@@ -16,17 +16,14 @@ namespace MapDomain.Entities
     {
         Client,
         Resource,
-       
-        Administrator
+        Administrator, 
     }
+
     public class User : IdentityUser<int, CustomUserLogin, CustomUserRole, CustomUserClaim>
     {
-       
-       
-      
-
-
-
+        public String UserType { get; set; }
+        [Key]
+        public int idUser { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User, int> manager)
         {
             // Note the authenticationType must match the one defined in

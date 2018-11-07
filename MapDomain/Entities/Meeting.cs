@@ -13,15 +13,18 @@ namespace MapDomain.Entities
         [Key]
         public int IdMeeting { get; set; }
         public DateTime MeetingDate { get; set; }
-        [ForeignKey("IdRessource")]
+     
         public virtual Ressource Ressource { get; set; }
+        [ForeignKey("Ressource")]
         public int? IdRessource { get; set; }
-        [ForeignKey("IdClient")]
+ 
         public virtual Client Client { get; set; }
+        [ForeignKey("Client")]
         public int? IdClient { get; set; }
-        [ForeignKey("IdManager")]
-        public virtual RecruitementManager RecruitementManager { get; set; }
-        public int? IdManager { get; set; }
+       
+        public virtual Administrator Administrator { get; set; }
+        [ForeignKey("Administrator")]
+        public int? IdAdministrator { get; set; }
     }
 
 }
