@@ -196,3 +196,36 @@ C:\Users\Omar Dagdoug\Documents\Visual Studio 2015\MAP-Project\MapService\bin\De
 C:\Users\Omar Dagdoug\Documents\Visual Studio 2015\MAP-Project\MapService\obj\Debug\MapService.csprojResolveAssemblyReference.cache
 C:\Users\Omar Dagdoug\Documents\Visual Studio 2015\MAP-Project\MapService\obj\Debug\MapService.dll
 C:\Users\Omar Dagdoug\Documents\Visual Studio 2015\MAP-Project\MapService\obj\Debug\MapService.pdb
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\MapService.dll.config
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\MapService.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\MapService.pdb
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\EntityFramework.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\MapDomain.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\MapServicePattern.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.Owin.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Owin.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\MapData.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\MapDomain.pdb
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\MapServicePattern.pdb
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\EntityFramework.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.Owin.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\bin\Debug\MapData.pdb
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\obj\Debug\MapService.csprojResolveAssemblyReference.cache
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\obj\Debug\MapService.dll
+C:\Users\monia\Documents\GitHub\MAP-Project\MapService\obj\Debug\MapService.pdb

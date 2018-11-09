@@ -1,1 +1,38 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Levio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="~/Content/Front/apple-touch-icon.png">
+    <link rel="stylesheet" href="~/Content/Front/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/Front/css/normalize.css">
+    <link rel="stylesheet" href="~/Content/Front/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/Front/css/linearicons.css">
+    <link rel="stylesheet" href="~/Content/Front/css/scrollbar.css">
+    <link rel="stylesheet" href="~/Content/Front/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/Content/Front/css/prettyPhoto.css">
+    <link rel="stylesheet" href="~/Content/Front/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/Front/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Content/Front/css/jquery.countdown.css">
+    <link rel="stylesheet" href="~/Content/Front/css/animate.css">
+    <link rel="stylesheet" href="~/Content/Front/css/transitions.css">
+    <link rel="stylesheet" href="~/Content/Front/css/main.css">
+    <link rel="stylesheet" href="~/Content/Front/css/color.css">
+    <link rel="stylesheet" href="~/Content/Front/css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+    <div class="site-wrap">
+        @Html.Partial("_FrontHeader")
+        @RenderBody()
+        @Html.Partial("_FrontFooter")
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

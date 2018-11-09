@@ -12,7 +12,10 @@ namespace MapWeb.Controllers
         {
             return View();
         }
-
+        public ActionResult Acceuil()
+        {
+            return View();
+        }
         public ActionResult Index()
         {
             return View();
