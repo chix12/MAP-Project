@@ -578,3 +578,9 @@ C:\Users\Omar Dagdoug\Documents\Visual Studio 2015\MAP-Project\MapWeb\bin\fr\Sys
 C:\Users\Omar Dagdoug\Documents\Visual Studio 2015\MAP-Project\MapWeb\obj\Debug\MapWeb.csprojResolveAssemblyReference.cache
 C:\Users\Omar Dagdoug\Documents\Visual Studio 2015\MAP-Project\MapWeb\obj\Debug\MapWeb.dll
 C:\Users\Omar Dagdoug\Documents\Visual Studio 2015\MAP-Project\MapWeb\obj\Debug\MapWeb.pdb
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapWeb\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapWeb\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapWeb\bin\fr\System.Web.Razor.resources.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapWeb\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapWeb\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Kuro\Documents\Visual Studio 2015\Projects\ProjectMAP\MapWeb\bin\fr\System.Web.WebPages.Razor.resources.dll
