@@ -198,7 +198,9 @@ namespace MapWeb.Controllers
                             }
                             // AddErrors(result);
                         }
+
                         break;
+                      
 /*
                     case MapDomain.Entities.UserType.Candidate:
                         {
