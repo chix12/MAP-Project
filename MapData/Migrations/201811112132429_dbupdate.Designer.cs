@@ -7,13 +7,13 @@ namespace MapData.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class migration : IMigrationMetadata
+    public sealed partial class dbupdate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(migration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(dbupdate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811071444391_migration"; }
+            get { return "201811112132429_dbupdate"; }
         }
         
         string IMigrationMetadata.Source

@@ -84,7 +84,7 @@ namespace MapWeb.Models
 
         [Required]
         [Display(Name = "AccountType")]
-        public UserType AccountType { get; set; }
+        public AccountType AccountType { get; set; }
     }
 
     public class ResetPasswordViewModel

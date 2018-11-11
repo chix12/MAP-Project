@@ -3,7 +3,7 @@ namespace MapData.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class migration : DbMigration
+    public partial class generatedb : DbMigration
     {
         public override void Up()
         {
@@ -22,13 +22,13 @@ namespace MapData.Migrations
                         StartDate = c.DateTime(nullable: false),
                         EndDate = c.DateTime(nullable: false),
                         IdProject = c.Int(),
-                        Client_idUser = c.Int(),
+                        Client_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.IdForm)
-                .ForeignKey("dbo.AspNetUsers", t => t.Client_idUser)
+                .ForeignKey("dbo.AspNetUsers", t => t.Client_Id)
                 .ForeignKey("dbo.Projects", t => t.IdProject)
                 .Index(t => t.IdProject)
-                .Index(t => t.Client_idUser);
+                .Index(t => t.Client_Id);
             
             CreateTable(
                 "dbo.Projects",
@@ -51,8 +51,8 @@ namespace MapData.Migrations
                 "dbo.AspNetUsers",
                 c => new
                     {
-                        idUser = c.Int(nullable: false, identity: true),
-                        UserType = c.String(),
+                        Id = c.Int(nullable: false, identity: true),
+                        AccountType = c.String(),
                         Email = c.String(maxLength: 256),
                         EmailConfirmed = c.Boolean(nullable: false),
                         PasswordHash = c.String(),
@@ -63,7 +63,6 @@ namespace MapData.Migrations
                         LockoutEndDateUtc = c.DateTime(),
                         LockoutEnabled = c.Boolean(nullable: false),
                         AccessFailedCount = c.Int(nullable: false),
-                        Id = c.Int(nullable: false),
                         UserName = c.String(nullable: false, maxLength: 256),
                         Type = c.String(),
                         Category = c.String(),
@@ -78,7 +77,7 @@ namespace MapData.Migrations
                         Discriminator = c.String(nullable: false, maxLength: 128),
                         JobRequest_IdRequest = c.Int(),
                     })
-                .PrimaryKey(t => t.idUser)
+                .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Profiles", t => t.IdProfile)
                 .ForeignKey("dbo.JobRequests", t => t.JobRequest_IdRequest)
                 .Index(t => t.UserName, unique: true, name: "UserNameIndex")
@@ -150,11 +149,11 @@ namespace MapData.Migrations
                         IdCompetence = c.Int(nullable: false, identity: true),
                         CompetenceName = c.String(),
                         Rank = c.Int(nullable: false),
-                        Ressource_idUser = c.Int(),
+                        Ressource_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.IdCompetence)
-                .ForeignKey("dbo.AspNetUsers", t => t.Ressource_idUser)
-                .Index(t => t.Ressource_idUser);
+                .ForeignKey("dbo.AspNetUsers", t => t.Ressource_Id)
+                .Index(t => t.Ressource_Id);
             
             CreateTable(
                 "dbo.RessourceForms",
@@ -210,11 +209,11 @@ namespace MapData.Migrations
                         MandatId = c.Int(nullable: false, identity: true),
                         StartDate = c.DateTime(nullable: false),
                         EndDate = c.DateTime(nullable: false),
-                        Ressource_idUser = c.Int(),
+                        Ressource_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.MandatId)
-                .ForeignKey("dbo.AspNetUsers", t => t.Ressource_idUser)
-                .Index(t => t.Ressource_idUser);
+                .ForeignKey("dbo.AspNetUsers", t => t.Ressource_Id)
+                .Index(t => t.Ressource_Id);
             
             CreateTable(
                 "dbo.Files",
@@ -281,13 +280,13 @@ namespace MapData.Migrations
                 "dbo.RessourceProjects",
                 c => new
                     {
-                        Ressource_idUser = c.Int(nullable: false),
+                        Ressource_Id = c.Int(nullable: false),
                         Project_IdProject = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => new { t.Ressource_idUser, t.Project_IdProject })
-                .ForeignKey("dbo.AspNetUsers", t => t.Ressource_idUser, cascadeDelete: true)
+                .PrimaryKey(t => new { t.Ressource_Id, t.Project_IdProject })
+                .ForeignKey("dbo.AspNetUsers", t => t.Ressource_Id, cascadeDelete: true)
                 .ForeignKey("dbo.Projects", t => t.Project_IdProject, cascadeDelete: true)
-                .Index(t => t.Ressource_idUser)
+                .Index(t => t.Ressource_Id)
                 .Index(t => t.Project_IdProject);
             
             CreateTable(
@@ -295,13 +294,13 @@ namespace MapData.Migrations
                 c => new
                     {
                         Vaccations_IdVaccation = c.Int(nullable: false),
-                        Ressource_idUser = c.Int(nullable: false),
+                        Ressource_Id = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => new { t.Vaccations_IdVaccation, t.Ressource_idUser })
+                .PrimaryKey(t => new { t.Vaccations_IdVaccation, t.Ressource_Id })
                 .ForeignKey("dbo.Vaccations", t => t.Vaccations_IdVaccation, cascadeDelete: true)
-                .ForeignKey("dbo.AspNetUsers", t => t.Ressource_idUser, cascadeDelete: true)
+                .ForeignKey("dbo.AspNetUsers", t => t.Ressource_Id, cascadeDelete: true)
                 .Index(t => t.Vaccations_IdVaccation)
-                .Index(t => t.Ressource_idUser);
+                .Index(t => t.Ressource_Id);
             
         }
         
@@ -318,26 +317,26 @@ namespace MapData.Migrations
             DropForeignKey("dbo.Files", "IdRessource", "dbo.AspNetUsers");
             DropForeignKey("dbo.ClientRequestForms", "IdProject", "dbo.Projects");
             DropForeignKey("dbo.Projects", "IdMandat", "dbo.Mandats");
-            DropForeignKey("dbo.Mandats", "Ressource_idUser", "dbo.AspNetUsers");
+            DropForeignKey("dbo.Mandats", "Ressource_Id", "dbo.AspNetUsers");
             DropForeignKey("dbo.Projects", "IdClient", "dbo.AspNetUsers");
             DropForeignKey("dbo.Meetings", "IdRessource", "dbo.AspNetUsers");
-            DropForeignKey("dbo.VaccationsRessources", "Ressource_idUser", "dbo.AspNetUsers");
+            DropForeignKey("dbo.VaccationsRessources", "Ressource_Id", "dbo.AspNetUsers");
             DropForeignKey("dbo.VaccationsRessources", "Vaccations_IdVaccation", "dbo.Vaccations");
             DropForeignKey("dbo.RessourceProjects", "Project_IdProject", "dbo.Projects");
-            DropForeignKey("dbo.RessourceProjects", "Ressource_idUser", "dbo.AspNetUsers");
+            DropForeignKey("dbo.RessourceProjects", "Ressource_Id", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUsers", "IdProfile", "dbo.Profiles");
             DropForeignKey("dbo.Messages", "IdRessource", "dbo.AspNetUsers");
             DropForeignKey("dbo.Messages", "IdClient", "dbo.AspNetUsers");
-            DropForeignKey("dbo.Competences", "Ressource_idUser", "dbo.AspNetUsers");
+            DropForeignKey("dbo.Competences", "Ressource_Id", "dbo.AspNetUsers");
             DropForeignKey("dbo.RessourceFormCompetences", "Competence_IdCompetence", "dbo.Competences");
             DropForeignKey("dbo.RessourceFormCompetences", "RessourceForm_IdForm", "dbo.RessourceForms");
             DropForeignKey("dbo.Meetings", "IdClient", "dbo.AspNetUsers");
             DropForeignKey("dbo.Meetings", "IdAdministrator", "dbo.AspNetUsers");
-            DropForeignKey("dbo.ClientRequestForms", "Client_idUser", "dbo.AspNetUsers");
-            DropIndex("dbo.VaccationsRessources", new[] { "Ressource_idUser" });
+            DropForeignKey("dbo.ClientRequestForms", "Client_Id", "dbo.AspNetUsers");
+            DropIndex("dbo.VaccationsRessources", new[] { "Ressource_Id" });
             DropIndex("dbo.VaccationsRessources", new[] { "Vaccations_IdVaccation" });
             DropIndex("dbo.RessourceProjects", new[] { "Project_IdProject" });
-            DropIndex("dbo.RessourceProjects", new[] { "Ressource_idUser" });
+            DropIndex("dbo.RessourceProjects", new[] { "Ressource_Id" });
             DropIndex("dbo.RessourceFormCompetences", new[] { "Competence_IdCompetence" });
             DropIndex("dbo.RessourceFormCompetences", new[] { "RessourceForm_IdForm" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
@@ -345,10 +344,10 @@ namespace MapData.Migrations
             DropIndex("dbo.OrganizationalCharts", new[] { "IdClient" });
             DropIndex("dbo.OrganizationalCharts", new[] { "IdRessource" });
             DropIndex("dbo.Files", new[] { "IdRessource" });
-            DropIndex("dbo.Mandats", new[] { "Ressource_idUser" });
+            DropIndex("dbo.Mandats", new[] { "Ressource_Id" });
             DropIndex("dbo.Messages", new[] { "IdRessource" });
             DropIndex("dbo.Messages", new[] { "IdClient" });
-            DropIndex("dbo.Competences", new[] { "Ressource_idUser" });
+            DropIndex("dbo.Competences", new[] { "Ressource_Id" });
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.Meetings", new[] { "IdAdministrator" });
@@ -361,7 +360,7 @@ namespace MapData.Migrations
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.Projects", new[] { "IdClient" });
             DropIndex("dbo.Projects", new[] { "IdMandat" });
-            DropIndex("dbo.ClientRequestForms", new[] { "Client_idUser" });
+            DropIndex("dbo.ClientRequestForms", new[] { "Client_Id" });
             DropIndex("dbo.ClientRequestForms", new[] { "IdProject" });
             DropTable("dbo.VaccationsRessources");
             DropTable("dbo.RessourceProjects");

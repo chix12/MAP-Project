@@ -34,8 +34,8 @@
     <div id="Enum"  class="form-group">
         @Html.LabelFor(m => m.AccountType, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.Label("Client: ", new { @class = "control-label" }) @Html.RadioButtonFor(m => m.AccountType,UserType.Client, new { @id = "Client", onclick = "Afficher()" })
-            @Html.Label("Resource: ", new { @class = "control-label" }) @Html.RadioButtonFor(m => m.AccountType, UserType.Resource , new { @id = "Resource", onclick = "Afficher3()" })
+            @Html.Label("Client: ", new { @class = "control-label" }) @Html.RadioButtonFor(m => m.AccountType,AccountType.Client, new { @id = "Client", onclick = "Afficher()" })
+            @Html.Label("Resource: ", new { @class = "control-label" }) @Html.RadioButtonFor(m => m.AccountType, AccountType.Resource , new { @id = "Resource", onclick = "Afficher3()" })
            </div>
     </div>
 

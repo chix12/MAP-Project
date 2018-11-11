@@ -12,7 +12,7 @@ using static MapDomain.Entities.User;
 
 namespace MapDomain.Entities
 {
-    public enum UserType
+    public enum AccountType
     {
         Client,
         Resource,
@@ -21,9 +21,9 @@ namespace MapDomain.Entities
 
     public class User : IdentityUser<int, CustomUserLogin, CustomUserRole, CustomUserClaim>
     {
-        public String UserType { get; set; }
-        [Key]
-        public int idUser { get; set; }
+        public String AccountType { get; set; }
+       // [Key]
+        //public int idUser { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User, int> manager)
         {
             // Note the authenticationType must match the one defined in

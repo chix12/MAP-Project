@@ -1,0 +1,43 @@
+﻿
+
+@model IEnumerable<MapDomain.Entities.Mandat>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/FrontEndLayout.cshtml";
+}
+
+<h2>Resources List</h2>
+
+
+
+
+<!-- /# column -->
+<div class="col-lg-6">
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>UserName</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>WorkType</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+
+                @foreach (var item in Model)
+                {
+                    @Html.Partial("_PartialView", item);
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

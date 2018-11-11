@@ -94,9 +94,17 @@
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="MapContext.cs" />
-    <Compile Include="Migrations\201811071444391_migration.cs" />
-    <Compile Include="Migrations\201811071444391_migration.Designer.cs">
-      <DependentUpon>201811071444391_migration.cs</DependentUpon>
+    <Compile Include="Migrations\201811111803052_generatedb.cs" />
+    <Compile Include="Migrations\201811111803052_generatedb.Designer.cs">
+      <DependentUpon>201811111803052_generatedb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811112132429_dbupdate.cs" />
+    <Compile Include="Migrations\201811112132429_dbupdate.Designer.cs">
+      <DependentUpon>201811112132429_dbupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811112143130_dbupdate2.cs" />
+    <Compile Include="Migrations\201811112143130_dbupdate2.Designer.cs">
+      <DependentUpon>201811112143130_dbupdate2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,8 +120,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811071444391_migration.resx">
-      <DependentUpon>201811071444391_migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811111803052_generatedb.resx">
+      <DependentUpon>201811111803052_generatedb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811112132429_dbupdate.resx">
+      <DependentUpon>201811112132429_dbupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811112143130_dbupdate2.resx">
+      <DependentUpon>201811112143130_dbupdate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
