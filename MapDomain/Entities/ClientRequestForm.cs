@@ -20,6 +20,7 @@ namespace MapDomain.Entities
         public int Fees { get; set; }
         public String Description { get; set; }
         public String Requirements { get; set; }
+        [Display(Name = "Profile")]
         public String ProfileNeeded { get; set; }
         public int YearsOfExperience { get; set; }
         [DataType(DataType.DateTime)]

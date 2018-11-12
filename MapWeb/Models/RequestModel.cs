@@ -19,6 +19,7 @@ namespace MapWeb.Models
         public int Fees { get; set; }
         public String Description { get; set; }
         public String Requirements { get; set; }
+        [Display(Name ="Profile")]
         public String ProfileNeeded { get; set; }
         [Display(Name = "Years of Experience")]
         public int YearsOfExperience { get; set; }

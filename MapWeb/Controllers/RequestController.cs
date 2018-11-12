@@ -3,7 +3,9 @@ using MapService;
 using MapWeb.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -16,13 +18,26 @@ namespace MapWeb.Controllers
         // GET: Request
         public ActionResult Index()
         {
-           return View();
+            
+            var requests = sr.GetMany();
+            return View(requests);
+         
         }
 
         // GET: Request/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            ClientRequestForm request = sr.GetById((long)id);
+            RequestModel rm = new RequestModel();
+            rm.Description = request.Description;
+            rm.EndDate = request.EndDate;
+            rm.Fees = request.Fees;
+            rm.ProfileNeeded = request.ProfileNeeded;
+            rm.Type = request.Type;
+            rm.YearsOfExperience = request.YearsOfExperience;
+            rm.IdProject = request.IdProject;
+
+            return View(rm);
         }
 
         // GET: Request/Create
@@ -68,47 +83,81 @@ namespace MapWeb.Controllers
         }
 
         // GET: Request/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int? id)
         {
-            return View();
+            ClientRequestForm request = sr.GetById((long)id);
+            RequestModel rm = new RequestModel();
+            rm.Description = request.Description;
+            rm.EndDate = request.EndDate;
+            rm.Fees = request.Fees;
+            rm.ProfileNeeded = request.ProfileNeeded;
+            rm.Type = request.Type;
+            rm.YearsOfExperience = request.YearsOfExperience;
+            rm.IdProject = request.IdProject;
+
+            return View(rm);
         }
 
         // POST: Request/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        [HttpPost, ActionName("Edit")]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditPost(int? id)
         {
-            try
+            if (id == null)
             {
-                // TODO: Add update logic here
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var studentToUpdate = sr.GetById((long)id);
+            if (TryUpdateModel(studentToUpdate, "",
+               new string[] { "Fees", "Description", "YearsOfExperience" }))
+            {
+                try
+                {
+                    sr.Commit();
 
-                return RedirectToAction("Index");
+                    return RedirectToAction("Index");
+                }
+                catch (DataException /* dex */)
+                {
+                    //Log the error (uncomment dex variable name and add a line here to write a log.
+                    ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
+                }
             }
-            catch
-            {
-                return View();
-            }
+            return View(studentToUpdate);
         }
 
         // GET: Request/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            ClientRequestForm request = sr.GetById((long)id);
+            RequestModel rm = new RequestModel();
+            rm.Description = request.Description;
+            rm.EndDate = request.EndDate;
+            rm.Fees = request.Fees;
+            rm.ProfileNeeded = request.ProfileNeeded;
+            rm.Type = request.Type;
+            rm.YearsOfExperience = request.YearsOfExperience;
+            rm.IdProject = request.IdProject;
+
+            return View(rm);                        
         }
 
         // POST: Request/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id, RequestModel rm)
         {
             try
             {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
+                ClientRequestForm Request = sr.GetById((long)id);
+                sr.Delete(Request);
+                sr.Commit();
             }
-            catch
+            catch (DataException/* dex */s)
             {
                 return View();
             }
+            return RedirectToAction("Index");
         }
     }
 }

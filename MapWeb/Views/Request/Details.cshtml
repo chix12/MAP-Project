@@ -1,0 +1,90 @@
+﻿@model MapWeb.Models.RequestModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/FrontEndLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RequestModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fees)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fees)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Requirements)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Requirements)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfileNeeded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfileNeeded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsOfExperience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearsOfExperience)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdProject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdProject)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

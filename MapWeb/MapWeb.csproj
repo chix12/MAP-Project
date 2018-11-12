@@ -585,7 +585,9 @@
     <Content Include="Views\Mandat\CreateMandat.cshtml" />
     <Content Include="Views\Mandat\IndexMandat.cshtml" />
     <Content Include="Views\Request\Create.cshtml" />
+    <Content Include="Views\Request\Delete.cshtml" />
     <Content Include="Views\Request\Index.cshtml" />
+    <Content Include="Views\Request\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
