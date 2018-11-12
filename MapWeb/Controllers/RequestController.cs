@@ -82,13 +82,16 @@ namespace MapWeb.Controllers
             }
         }
 
-        // GET: Request/Edit/5
-        public ActionResult Edit(int? id)
+        // GET: Project/Edit/5
+        public ActionResult Edit(int id)
         {
+
             ClientRequestForm request = sr.GetById((long)id);
             RequestModel rm = new RequestModel();
+
             rm.Description = request.Description;
             rm.EndDate = request.EndDate;
+            rm.StartDate = request.StartDate;
             rm.Fees = request.Fees;
             rm.ProfileNeeded = request.ProfileNeeded;
             rm.Type = request.Type;
@@ -98,34 +101,34 @@ namespace MapWeb.Controllers
             return View(rm);
         }
 
-        // POST: Request/Edit/5
-        [HttpPost, ActionName("Edit")]
+        // POST: Project/Edit/5
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult EditPost(int? id)
+        public ActionResult Edit(int id, RequestModel rm)
         {
-            if (id == null)
+            try
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            var studentToUpdate = sr.GetById((long)id);
-            if (TryUpdateModel(studentToUpdate, "",
-               new string[] { "Fees", "Description", "YearsOfExperience" }))
-            {
-                try
-                {
-                    sr.Commit();
+                // TODO: Add update logic here
+                ClientRequestForm request = sr.GetById((long)id);
 
-                    return RedirectToAction("Index");
-                }
-                catch (DataException /* dex */)
-                {
-                    //Log the error (uncomment dex variable name and add a line here to write a log.
-                    ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
-                }
+                request.Description = rm.Description;
+                request.StartDate = rm.StartDate;
+                request.EndDate = rm.EndDate;
+                request.Fees = rm.Fees;
+                request.ProfileNeeded = rm.ProfileNeeded;
+                request.Type = rm.Type;
+                request.YearsOfExperience = rm.YearsOfExperience;
+                request.IdProject = rm.IdProject;
+
+                sr.Update(request);
+                sr.Commit();
+                return RedirectToAction("Index");
             }
-            return View(studentToUpdate);
+            catch (Exception ex)
+            {
+                return View(rm);
+            }
         }
-
         // GET: Request/Delete/5
         public ActionResult Delete(int id)
         {
@@ -153,7 +156,7 @@ namespace MapWeb.Controllers
                 sr.Delete(Request);
                 sr.Commit();
             }
-            catch (DataException/* dex */s)
+            catch (DataException/* dex */)
             {
                 return View();
             }

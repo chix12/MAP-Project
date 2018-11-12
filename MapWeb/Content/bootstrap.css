@@ -1966,6 +1966,13 @@ textarea.input-lg {
   margin-bottom: 0;
 }
 
+.center{
+    margin : 0 !important ;
+    display : flex !important ;
+    justify-content : center !important ;
+
+}
+
 .form-horizontal .form-group {
   margin-right: -15px;
   margin-left: -15px;
@@ -6790,6 +6797,13 @@ tr.visible-print {
 th.visible-print,
 td.visible-print {
   display: none !important;
+}
+
+.center{
+    margin : 0 !important ;
+    display : flex !important ;
+    justify-content : center !important ;
+
 }
 
 @media print {
