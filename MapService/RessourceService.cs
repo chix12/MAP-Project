@@ -20,8 +20,16 @@ namespace MapService
         public RessourceService() : base(uow)
         {
         }
+        public IEnumerable<Ressource> GetRessource()
+        {
+            var req = from p in GetMany()
 
-       
-          
+                      select p;
+            return req;
+
+        }
+    
+
+
     }
 }

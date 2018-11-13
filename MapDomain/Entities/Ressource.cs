@@ -14,7 +14,7 @@ namespace MapDomain.Entities
 
         //[Key]
         //public int IdRessource { get; set; }
-        //public ContractType type { get; set; }
+        public ContractType typec { get; set; }
         public int Rating { get; set; }
         public String Seniority { get; set; }
         public String Status { get; set; }

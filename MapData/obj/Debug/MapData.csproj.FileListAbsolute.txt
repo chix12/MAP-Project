@@ -248,3 +248,34 @@ C:\Users\Kuro\Desktop\MAP-Project\MapData\obj\Debug\MapData.Migrations.generated
 C:\Users\Kuro\Desktop\MAP-Project\MapData\obj\Debug\MapData.csproj.GenerateResource.Cache
 C:\Users\Kuro\Desktop\MAP-Project\MapData\obj\Debug\MapData.Migrations.dbupdate.resources
 C:\Users\Kuro\Desktop\MAP-Project\MapData\obj\Debug\MapData.Migrations.dbupdate2.resources
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\MapData.dll.config
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\MapData.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\MapData.pdb
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\EntityFramework.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\MapDomain.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.Owin.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Owin.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\MapDomain.pdb
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\EntityFramework.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.Owin.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\obj\Debug\MapData.csprojResolveAssemblyReference.cache
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\obj\Debug\MapData.dll
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\obj\Debug\MapData.pdb
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\obj\Debug\MapData.Migrations._enum.resources
+C:\Users\Mariam\Desktop\4 BI ERP\GIT\MAP-Project\MapData\obj\Debug\MapData.csproj.GenerateResource.Cache
