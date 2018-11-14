@@ -1,0 +1,108 @@
+﻿
+
+@{
+    ViewBag.Title = "IndexThree";
+    Layout = "~/Views/Stat/_MyLayout.cshtml";
+}
+
+
+<script language="javascript">
+    var Name = [];
+    var nbr = [];
+
+
+    $(function () {
+        $.fn.extend({
+            RessourcesByProject: function () {
+                $.ajax({
+                    type: "POST",
+                    url: "GetElements",
+                    data: '{}',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    async: false,
+                    success: function (data) {
+                        Name = []; nbr = [];
+                        $.each(data, function (i, x) {
+                           Name.push(x.Name);
+                            nbr.push(x.nbr);
+
+                        });
+                    },
+                    failure: function (response) {
+                        alert(response.d);
+                    }
+                });
+                $('#ressourcesbyproject').highcharts({
+                    chart: {
+                        type: 'column', width: 830
+                    },
+                    title: {
+                        text: 'Ressources By Project'
+                    },
+                    xAxis: {
+                        categories: Name,
+                        crosshair: true
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Ressources'
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                            '<td style="padding:0"><b>{point.y:.0f}</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            pointPadding: 0.2,
+                            borderWidth: 0,
+                            dataLabels: {
+                                enabled: true,
+                                rotation: 40,
+                                softConnector: true,
+                                y: -8
+                            }
+                        }
+
+                    },
+                    series: [{
+                        showInLegend: false,
+                        name: 'nbr',
+                        data: nbr
+
+                    }]
+                });
+                $("text:contains('Highcharts.com')").css('display', 'none');
+            }
+        });
+    });
+
+        //$("text:contains('Highcharts.com')").css('display', 'none');
+    $(function () {
+        $.fn.RessourcesByProject();
+    });
+
+</script>
+
+<h2>Show Graph</h2>
+
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading">Project Ressource Graph</div>
+
+    <div class="panel-body">
+
+        <div id="ressourcesbyproject"></div>
+
+
+    </div>
+
+</div>
+

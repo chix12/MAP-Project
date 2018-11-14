@@ -31,6 +31,11 @@ namespace MapWeb.Controllers
         {
             return View();
         }
+        // GET: Stat
+        public ActionResult IndexThree()
+        {
+            return View();
+        }
         public ActionResult GetData()
         {
             //var Ress = db.GetMany().Where(x => x.AccountType == "Ressource" );
@@ -92,5 +97,32 @@ namespace MapWeb.Controllers
 
             return Json(obj2, JsonRequestBehavior.AllowGet);
             }
+        [HttpPost]
+        public JsonResult GetElements()
+        {
+            SqlConnection con = new SqlConnection("Data Source=(localdb)\\mssqllocaldb; Initial Catalog=Map;Integrated Security=true");
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter(@"Select P.Name as Name ,Count(Ressource_Id)  as nbr from RessourceProjects RP,Projects P where  P.IdProject = RP.Project_IdProject  group by Name ", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            List<GraphModal> lst = new List<GraphModal>();
+            foreach (DataRow row in dt.Rows)
+            {
+                lst.Add(new GraphModal() { Name = row["Name"].ToString(), nbr = int.Parse(row["nbr"].ToString()) });
+            }
+            return Json(lst, JsonRequestBehavior.AllowGet);
         }
+        public class GraphModal
+        {
+            public string Name { get; set; }
+            public int nbr { get; set; }
+
+
+        }
+
     }
+
+
+
+    }
+    

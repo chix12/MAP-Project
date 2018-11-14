@@ -634,6 +634,7 @@
     <Content Include="Views\Stat\IndexStat.cshtml" />
     <Content Include="Views\Stat\_MyLayout.cshtml" />
     <Content Include="Views\Stat\IndexM.cshtml" />
+    <Content Include="Views\Stat\IndexThree.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
