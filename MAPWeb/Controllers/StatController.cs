@@ -115,14 +115,14 @@ namespace MapWeb.Controllers
             List<GraphModal> lst = new List<GraphModal>();
             foreach (DataRow row in dt.Rows)
             {
-                lst.Add(new GraphModal() { Name = row["Name"].ToString(), nbr = int.Parse(row["nbr"].ToString()) });
+                lst.Add(new GraphModal() { Name2 = row["Name"].ToString(), nbr2 = int.Parse(row["nbr"].ToString()) });
             }
             return Json(lst, JsonRequestBehavior.AllowGet);
         }
         public class GraphModal
         {
-            public string Name { get; set; }
-            public int nbr { get; set; }
+            public string Name2 { get; set; }
+            public int nbr2 { get; set; }
 
 
         }
