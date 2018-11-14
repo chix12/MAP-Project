@@ -36,6 +36,13 @@ namespace MapWeb.Controllers
         {
             return View();
         }
+        // GET: Stat
+        public ActionResult IndexMeetings()
+        {
+            return View();
+        }
+
+
         public ActionResult GetData()
         {
             //var Ress = db.GetMany().Where(x => x.AccountType == "Ressource" );
@@ -119,10 +126,32 @@ namespace MapWeb.Controllers
 
 
         }
+        [HttpPost]
+        public JsonResult GetMeetings()
+        {
+            SqlConnection con = new SqlConnection("Data Source=(localdb)\\mssqllocaldb; Initial Catalog=Map;Integrated Security=true");
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter(@"Select A.Name as Name, Count(M.IdMeeting) as nbr, CONVERT(VARCHAR(10),M.MeetingDate,111) as meetingdate  from Meetings M , AspNetUsers A where M.IdAdministrator = A.id  Group By Name , CONVERT(VARCHAR(10),M.MeetingDate,111) ", con);
+            
+            DataTable dt = new DataTable();
+           
+            da.Fill(dt);
 
+            List<GraphMeeting> lst = new List<GraphMeeting>();
+            foreach (DataRow row in dt.Rows)
+            {
+                lst.Add(new GraphMeeting() { Name = row["Name"].ToString(), nbr = int.Parse(row["nbr"].ToString()) , med = row["meetingdate"].ToString()});
+            }
+            return Json(lst, JsonRequestBehavior.AllowGet);
+        }
     }
 
-
+    public class GraphMeeting
+    {
+        public string Name { get; set; }
+        public int nbr { get; set; }
+        public string med { get; set; }
 
     }
+}
     

@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "IndexMeetings";
+    Layout = "~/Views/Stat/_MyLayout.cshtml";
+}
+
+<h2>IndexMeetings</h2>
+<script type="text/javascript">
+    var Name = [];
+    var nbr = [];
+    var med = [];
+    $(function () {
+        $.fn.extend({
+            MeetingByAdmin: function () {
+                $.ajax({
+                    type: "POST",
+                    url: "GetMeetings",
+                    data: '{}',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    async: false,
+                    success: function (data) {
+                        Name = []; nbr = []; med = [];
+                        $.each(data, function (i, x) {
+                            Name.push(x.Name);
+                            nbr.push(x.nbr);
+                            med.push(x.med);
+
+                        });
+                    },
+                    failure: function (response) {
+                        alert(response.d);
+                    }
+                });
+
+                $('#meetingbyadmin').highcharts(
+                {chart: {
+                    type: 'heatmap',
+                    marginTop: 40,
+                    marginBottom: 80,
+                    plotBorderWidth: 1
+                },
+
+
+                    title: {
+                        text: 'Meetings By Admin'
+                    },
+
+                    xAxis: {
+                        categories: Name
+                    },
+
+                    yAxis: {
+                        categories: med
+       
+                    },
+
+                    colorAxis: {
+                        min: 0,
+                        minColor: '#FFFFFF',
+                        maxColor: Highcharts.getOptions().colors[2]
+                    },
+
+                    legend: {
+                        align: 'right',
+                        layout: 'vertical',
+                        margin: 0,
+                        verticalAlign: 'top',
+                        y: 25,
+                        symbolHeight: 280
+                    },
+
+                    tooltip: {
+                        formatter: function () {
+                            return '<b>' + this.series.xAxis.categories[this.point.x] + '</b> have <br><b>' +
+                    this.point.y + '</b> Meetings on <br><b>' + this.series.yAxis.categories[this.point.y] + '</b>';
+                        }
+                    },
+
+                    series: [{
+                        name: 'Meetings by Admin',
+                        borderWidth: 1,
+                        data: nbr 
+                        //dataLabels: {
+                        //    enabled: true,
+                        //    color: '#000000'
+                        //}
+                    }]
+
+                });
+                $("text:contains('Highcharts.com')").css('display', 'none');
+            }
+        });
+    });
+
+    //$("text:contains('Highcharts.com')").css('display', 'none');
+    $(function () {
+        $.fn.MeetingByAdmin();
+    });
+           </script>
+
+<h2>Show Graph</h2>
+
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading">Meetings Graph</div>
+
+    <div class="panel-body">
+
+        <div id="meetingbyadmin"></div>
+
+
+    </div>
+
+</div>
