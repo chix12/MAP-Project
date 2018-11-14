@@ -20,6 +20,7 @@ namespace MapDomain.Entities
         public String Status { get; set; }
         public String Name { get; set; }
         public virtual ICollection<Vaccations> Vaccations { get; set; }
+        public virtual ICollection<Mandat> Mandats { get; set; }
         public virtual ICollection<Competence> Competences { get; set; }
         public virtual ICollection<Meeting> Meetings { get; set; }
         public virtual ICollection<Message> Messages { get; set; }

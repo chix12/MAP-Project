@@ -1,0 +1,121 @@
+﻿
+@{  
+    ViewBag.Title = "IndexM";
+    Layout = "~/Views/Stat/_MyLayout.cshtml";
+}
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+            $.getJSON("/Stat/GenerateGraph", function (data) {
+
+                $('#container').highcharts({
+        chart: {
+            type: 'areaspline'
+        },
+        title: {
+            text: 'Average fruit consumption during one week'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 150,
+            y: 100,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+        },
+        xAxis: {
+            categories: [
+                'January',
+                'March',
+                'May',
+                'July',
+                'September',
+                'November'
+            ],
+            plotBands: [{ // visualize the weekend
+                from: 4.5,
+                to: 6.5,
+                color: 'rgba(68, 170, 213, .2)'
+            }]
+        },
+        yAxis: {
+            title: {
+                text: 'Ressource Unit'
+            }
+        },
+        tooltip: {
+            shared: true,
+            valueSuffix: ' units'
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            areaspline: {
+                fillOpacity: 0.5
+            }
+        },
+        series: [{
+                            name: 'NombreRessources',
+                            colorByPoint: true,
+                            data: [{
+                                name: 'Mandats',
+                                y: data.ressmandat
+                            }, {
+                                name: 'InterMandats',
+                                y: data.ressinter
+                            }]
+                        }]
+    });
+    //$(document).ready(function () {
+    //    $.getJSON("/Stat/GenerateGraph", function (data) {
+
+    //        $('#container').highcharts({
+    //            chart: {
+    //                plotBackgroundColor: null,
+    //                plotBorderWidth: null,
+    //                plotShadow: false,
+    //                type: 'pie'
+    //            },
+    //            title: {
+    //                text: 'Mandats et InterMandats'
+    //            },
+    //            tooltip: {
+    //                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    //            },
+
+    //            plotOptions: {
+    //                pie: {
+    //                    allowPointSelect: true,
+    //                    cursor: 'pointer',
+    //                    dataLabels: {
+    //                        enabled: true,
+    //                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+    //                        style: {
+    //                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+    //                        }
+    //                        }
+    //                    }
+    //                },
+    //            series: [{
+    //                name: 'NombreRessources',
+    //                colorByPoint: true,
+    //                data: [{
+    //                    name: 'Mandats',
+    //                    y: data.ressmandat
+    //                }, {
+    //                    name: 'InterMandats',
+    //                    y: data.ressinter
+    //                }]
+    //            }]
+    //        });
+    });
+    });
+
+</script>
+<div>
+    <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+</div>

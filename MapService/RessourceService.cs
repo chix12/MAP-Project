@@ -28,8 +28,26 @@ namespace MapService
             return req;
 
         }
-    
+
+        public IEnumerable<Ressource> RessourceByMandat(Mandat m)
+        { //{
+          //    var ListProject = uow.getRepository<Project>().
+          //         GetMany().
+          //         Where(Project => Project.Mandat== m);
+          //    var ListRessource = uow.getRepository<Ressource>().
+          //        GetMany().
+          //        Where(m.Ressource = Ressource);
 
 
+            var req = from ressource in GetMany()
+                      where m.Ressource.Equals(ressource)
+                      select ressource;
+            return req;
+
+            //var req = from Project in ListProject
+            //          select Project.Ressources;
+
+            //return req;
+        }
     }
 }
