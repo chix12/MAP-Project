@@ -22,20 +22,11 @@ namespace MapWeb.Controllers
         RessourceService sr = new RessourceService();
         ServiceMandat sm = new ServiceMandat();
         // GET: Stat
-        public ActionResult IndexStat()
+        public ActionResult Dash()
         {
             return View();
         }
-        // GET: Stat
-        public ActionResult IndexM()
-        {
-            return View();
-        }
-        // GET: Stat
-        public ActionResult IndexThree()
-        {
-            return View();
-        }
+        
         // GET: Stat
         public ActionResult IndexMeetings()
         {

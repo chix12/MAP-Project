@@ -93,6 +93,8 @@
     <Compile Include="RequestsService.cs" />
     <Compile Include="RessourceService.cs" />
     <Compile Include="ServiceMandat.cs" />
+    <Compile Include="IServiceUsers.cs" />
+    <Compile Include="ServiceUsers.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MapData\MapData.csproj">

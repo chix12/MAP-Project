@@ -636,6 +636,8 @@
     <Content Include="Views\Stat\IndexM.cshtml" />
     <Content Include="Views\Stat\IndexThree.cshtml" />
     <Content Include="Views\Stat\IndexMeetings.cshtml" />
+    <Content Include="Views\Shared\_mainView.cshtml" />
+    <Content Include="Views\Stat\Dash.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -650,6 +652,10 @@
     <Folder Include="Content\AdminBack\Trident\" />
     <Folder Include="Content\AdminBack\xl\" />
     <Folder Include="Content\AdminBack\zlib\" />
+    <Folder Include="Content\Dash\bower_components\" />
+    <Folder Include="Content\Dash\build\" />
+    <Folder Include="Content\Dash\dist\" />
+    <Folder Include="Content\Dash\plugins\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

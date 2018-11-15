@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MapWeb.Models;
 using MapDomain.Entities;
+using MapService;
 
 namespace MapWeb.Controllers
 {
@@ -18,6 +19,7 @@ namespace MapWeb.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        public ServiceUsers su = new ServiceUsers();
 
         public AccountController()
         {
@@ -52,7 +54,7 @@ namespace MapWeb.Controllers
                 _userManager = value;
             }
         }
-
+       
         //
         // GET: /Account/Login
         [AllowAnonymous]
@@ -77,19 +79,52 @@ namespace MapWeb.Controllers
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            switch (result)
+
+        
+            User U = new User();
+            U = su.UserByUserName(model.Email).First();
+            bool v = U.AccountType == "Administrator";
+            
+            //         Where(Project => Project.Mandat== m);
+            if (v)
             {
-                case SignInStatus.Success :
-                    
-                    return RedirectToLocal(returnUrl);
-                case SignInStatus.LockedOut:
-                    return View("Lockout");
-                case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-                case SignInStatus.Failure:
-                default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
-                    return View(model);
+                switch (result)
+                {
+
+                    case SignInStatus.Success:
+
+
+
+                        return RedirectToAction("Dash", "Stat");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
+            }
+            else
+            {
+                switch (result)
+                {
+
+                    case SignInStatus.Success:
+
+
+
+                        return RedirectToAction("Acceuil", "Home");
+                    case SignInStatus.LockedOut:
+                        return View("Lockout");
+                    case SignInStatus.RequiresVerification:
+                        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    case SignInStatus.Failure:
+                    default:
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                }
             }
         }
 
