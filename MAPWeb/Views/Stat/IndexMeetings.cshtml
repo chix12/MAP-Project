@@ -19,7 +19,7 @@
             $.fn.extend({
                 MeetingByAdmin: function () {
                     $.ajax({
-                        type: "POST",
+                        type: "GET",
                         url: "GetMeetings",
                         data: '{}',
                         contentType: "application/json; charset=utf-8",
@@ -186,7 +186,7 @@
             $.fn.extend({
                 RessourcesByProject: function () {
                     $.ajax({
-                        type: "POST",
+                        type: "GET",
                         url: "GetElements",
                         data: '{}',
                         contentType: "application/json; charset=utf-8",

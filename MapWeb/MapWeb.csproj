@@ -656,6 +656,7 @@
     <Folder Include="Content\Dash\build\" />
     <Folder Include="Content\Dash\dist\" />
     <Folder Include="Content\Dash\plugins\" />
+    <Folder Include="Views\NewStat\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

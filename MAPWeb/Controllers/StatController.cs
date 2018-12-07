@@ -95,8 +95,8 @@ namespace MapWeb.Controllers
 
             return Json(obj2, JsonRequestBehavior.AllowGet);
             }
-        [HttpPost]
-        public JsonResult GetElements()
+        
+        public ActionResult GetElements()
         {
             SqlConnection con = new SqlConnection("Data Source=(localdb)\\mssqllocaldb; Initial Catalog=Map;Integrated Security=true");
             con.Open();
@@ -117,8 +117,9 @@ namespace MapWeb.Controllers
 
 
         }
-        [HttpPost]
-        public JsonResult GetMeetings()
+       
+        //[HttpPost]
+        public ActionResult GetMeetings()
         {
             SqlConnection con = new SqlConnection("Data Source=(localdb)\\mssqllocaldb; Initial Catalog=Map;Integrated Security=true");
             con.Open();
