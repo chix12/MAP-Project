@@ -41,7 +41,7 @@ namespace MapData
         public DbSet<Message> Messages { get; set; }
         public DbSet<OrganizationalChart> OrganizationalCharts { get; set; }
         public DbSet<Profile> Profiles { get; set; }
-        public DbSet<Project> Projects { get; set; }
+        public DbSet<Ressource> Projects { get; set; }
         //public DbSet<RecruitementManager> RecruitementManagers { get; set; }
         // public DbSet<Ressource> Ressources { get; set; }
         public DbSet<RessourceForm> RessourceForms { get; set; }

@@ -19,7 +19,7 @@ namespace MapDomain.Entities
         public String Name { get; set; }
         public String Photo { get; set; }
         public virtual ICollection<Meeting> Meetings { get; set; }
-        public virtual ICollection<Project> Projects { get; set; }
+        public virtual ICollection<Ressource> Projects { get; set; }
         public virtual ICollection<Message> Messages { get; set; }
         public virtual ICollection<ClientRequestForm> ClientRequestForm { get; set; }
         /* [ForeignKey("IdChart")]

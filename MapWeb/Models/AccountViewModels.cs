@@ -1,4 +1,5 @@
 ﻿using MapDomain.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -65,6 +66,11 @@ namespace MapWeb.Models
 
     public class RegisterViewModel
     {
+
+        [Required]
+        [Display(Name = "UserName")]
+        public string UserName { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -84,7 +90,26 @@ namespace MapWeb.Models
 
         [Required]
         [Display(Name = "AccountType")]
-        public UserType AccountType { get; set; }
+        public AccountType AccountType { get; set; }
+
+        [Display(Name = "ProfileT")]
+        public string ProfileT { get; set; }
+
+        [Display(Name = "Seniority")]
+        public string Seniority { get; set; }
+
+        [Display(Name = "CurriculumVitae")]
+        public string CurriculumVitae { get; set; }
+        [Display(Name = "FirstName")]
+        public String FirstName { get; set; }
+        [Display(Name = "LastName")]
+        public String LastName { get; set; } 
+        [Display(Name = "PassPort")]
+        public String PassPort { get; set; }
+        [Display(Name = "Country")]
+        public CountryList Country { get; set; }
+        [Display(Name = "WorkType")]
+        public WorkType WorkType { get; set; }
     }
 
     public class ResetPasswordViewModel

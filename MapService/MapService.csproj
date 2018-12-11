@@ -85,9 +85,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IServiceDemandeur.cs" />
+    <Compile Include="IServiceMandat.cs" />
+    <Compile Include="IServiceQuestion.cs" />
+    <Compile Include="IServiceRessource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RessourceService.cs" />
+    <Compile Include="ServiceDemandeur.cs" />
+    <Compile Include="ServiceMandat.cs" />
+    <Compile Include="ServiceQuestion.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MapData\MapData.csproj">
+      <Project>{81AE2C1D-C92D-4706-81A4-F8566DC09E6A}</Project>
+      <Name>MapData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MapDomain\MapDomain.csproj">
       <Project>{c39b34a8-515f-456d-9655-f6876690ea22}</Project>
       <Name>MapDomain</Name>

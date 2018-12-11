@@ -24,7 +24,7 @@ namespace MapDomain.Entities
             public DateTime StartDate { get; set; }
             public DateTime EndDate { get; set; }
             [ForeignKey("IdProject")]
-            public Project Project { get; set; }
+            public Ressource Project { get; set; }
             public int? IdProject { get; set; }
 
         }

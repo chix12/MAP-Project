@@ -45,11 +45,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -97,6 +97,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -213,12 +221,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MandatController.cs" />
+    <Compile Include="Controllers\ResourceController.cs" />
+    <Compile Include="Controllers\TableController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MandatModel.cs" />
+    <Compile Include="Models\ResourceModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -463,9 +476,11 @@
     <Content Include="Content\Front\js\raphael-min.js" />
     <Content Include="Content\Front\js\readmore.js" />
     <Content Include="Content\Front\js\scrollbar.min.js" />
+    <Content Include="Content\Front\js\ShowRegister.js" />
     <Content Include="Content\Front\js\vendor\bootstrap.min.js" />
     <Content Include="Content\Front\js\vendor\jquery-library.js" />
     <Content Include="Content\Front\js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\dripicons-v2.svg" />
     <Content Include="fonts\fontawesome-webfont3e6e.svg" />
@@ -578,6 +593,16 @@
     <Content Include="Views\Shared\_FrontFooter.cshtml" />
     <Content Include="Views\Shared\FrontEndLayout.cshtml" />
     <Content Include="Views\Home\Acceuil.cshtml" />
+    <Content Include="Views\Mandat\CreateMandat.cshtml" />
+    <Content Include="Views\Resource\_Create.cshtml" />
+    <Content Include="Views\Resource\Create.cshtml" />
+    <Content Include="Views\Table\Table.cshtml" />
+    <Content Include="Views\Resource\Index2.cshtml" />
+    <Content Include="Views\Resource\_PartialView.cshtml" />
+    <Content Include="Views\Resource\Delete.cshtml" />
+    <Content Include="Views\Resource\Delete2.cshtml" />
+    <Content Include="Views\Resource\Edit.cshtml" />
+    <Content Include="Views\Table\Edit2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -592,6 +617,7 @@
     <Folder Include="Content\AdminBack\Trident\" />
     <Folder Include="Content\AdminBack\xl\" />
     <Folder Include="Content\AdminBack\zlib\" />
+    <Folder Include="Content\UploadFile\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
