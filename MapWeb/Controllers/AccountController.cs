@@ -10,7 +10,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MapWeb.Models;
 using MapDomain.Entities;
+
 using MapService;
+using System.IO;
 
 namespace MapWeb.Controllers
 {
@@ -184,7 +186,7 @@ namespace MapWeb.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public async Task<ActionResult> Register(RegisterViewModel model, HttpPostedFileBase image )
         {
             if (ModelState.IsValid)
             {
@@ -219,9 +221,38 @@ namespace MapWeb.Controllers
                     // Ngo Account type selected:
                     case AccountType.Resource:
                         {
+                            //System.Diagnostics.Debug.WriteLine("log data here"); 
+
+                          //  model.CurriculumVitae = image.FileName;
+
+                           // System.Diagnostics.Debug.WriteLine("2");
+
                             // create new Ngo and map form values to the instance
-                            User res = new Ressource { AccountType= "Resource", UserName = model.Email, Email = model.Email };
+
+                           // User res = new Ressource { AccountType= "Resource", UserName = model.Email, Email = model.Email };
+
+                            User res = new Ressource {
+                                AccountType = "Resource",
+                                UserName = model.UserName,
+                                Email = model.Email,
+                                ProfileT =model.ProfileT,
+                                Seniority =model.Seniority,
+                               // CurriculumVitae=model.CurriculumVitae
+                                };
+                              
+                            
+                            /*
+                            var path = Path.Combine(Server.MapPath("~/Content/UploadFile/"), image.FileName);
+                            image.SaveAs(path);
+                            */
+                            
+
+
+
+
                             result = await UserManager.CreateAsync(res, model.Password);
+
+                            
 
                             // Add Ngo role to the new User
                             if (result.Succeeded)
@@ -235,31 +266,37 @@ namespace MapWeb.Controllers
                         }
 
                         break;
-                      
-/*
-                    case MapDomain.Entities.UserType.Candidate:
-                        {
-                            // create new Ngo and map form values to the instance
-                            User cd = new Candidate { UserName = model.Email, Email = model.Email };
-                            result = await UserManager.CreateAsync(cd, model.Password);
 
-                            // Add Ngo role to the new User
+
+                    case AccountType.Demandeur:
+                        {
+                          
+                            User res = new Demandeur
+                            {
+                                AccountType = "Demandeur",
+                                UserName = model.UserName,
+                                Email = model.Email,
+                                FirstName = model.FirstName,
+                                LastName = model.LastName,
+                                PassPort = model.PassPort,
+                                Country = model.Country,
+                                WorkType = model.WorkType,
+                                
+                            };
+                            result = await UserManager.CreateAsync(res, model.Password);
                             if (result.Succeeded)
                             {
-                                //     UserManager.AddToRole(ngo.Id, EAccountType.Doctor.ToString());
-                                await SignInManager.SignInAsync(cd, isPersistent: false, rememberBrowser: false);
-
+                                await SignInManager.SignInAsync(res, isPersistent: false, rememberBrowser: false);
                                 return RedirectToAction("Index", "Home");
                             }
-                            // AddErrors(result);
                         }
-                        break;*/
+
+                        break;                    
                 }
 
             }
 
 
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
         

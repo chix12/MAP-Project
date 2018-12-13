@@ -1,0 +1,70 @@
+﻿@model IEnumerable<MapDomain.Entities.Ressource>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Resources List</h2>
+
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>
+                <div> Serach resource : @Html.TextBox("SearchString")    </div>
+            </td>
+
+            <td>
+                <span>
+                    <input type="submit" value="Search" class="btn btn-default" />
+                </span>
+            </td>
+        </tr>
+    </table>
+
+}
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+
+        <th></th>
+    </tr>*@
+
+
+
+<!-- /# column -->
+<div class="col-lg-6">
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>UserName</th>
+                    <th>Profil</th>
+                    <th>Seniority</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                @foreach (var item in Model)
+                {
+                    @Html.Partial("_PartialView", item);
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+    <hr />
+
+</div>
+

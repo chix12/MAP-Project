@@ -21,7 +21,7 @@ namespace MapDomain.Entities
         [ForeignKey("Client")]
         public int? IdClient { get; set; }
         [ForeignKey("IdProject")]
-        public virtual Project Project { get; set; }
+        public virtual Ressource Project { get; set; }
         public int? IdProject { get; set; }
 
     }

@@ -16,7 +16,8 @@ namespace MapDomain.Entities
     {
         Client,
         Resource,
-        Administrator, 
+        Administrator,
+        Demandeur,
     }
 
     public class User : IdentityUser<int, CustomUserLogin, CustomUserRole, CustomUserClaim>

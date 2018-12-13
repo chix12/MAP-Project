@@ -1,0 +1,18 @@
+﻿@model MapDomain.Entities.Ressource
+
+
+
+<tr>
+    <td>
+        @Html.DisplayFor(model => model.UserName)
+    </td>
+    <td><span>@Html.DisplayFor(model => model.ProfileT)</span></td>
+    <td><span>@Html.DisplayFor(model => model.Seniority)</span></td>
+    <td><span>@Html.DisplayFor(model => model.Email)</span></td>
+
+
+    
+    <td><span>@Html.ActionLink("Edit", "Edit", new { id = Model.Id })</span></td>
+    <td><span>@Html.ActionLink("Delete&Archive ", "Delete2", new { id = Model.Id })</span></td>
+    
+</tr>

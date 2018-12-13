@@ -95,6 +95,14 @@
     <Compile Include="ServiceMandat.cs" />
     <Compile Include="IServiceUsers.cs" />
     <Compile Include="ServiceUsers.cs" />
+    <Compile Include="IServiceDemandeur.cs" />
+    <Compile Include="IServiceMandat.cs" />
+    <Compile Include="IServiceQuestion.cs" />
+    <Compile Include="IServiceRessource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceDemandeur.cs" />
+    <Compile Include="ServiceMandat.cs" />
+    <Compile Include="ServiceQuestion.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MapData\MapData.csproj">

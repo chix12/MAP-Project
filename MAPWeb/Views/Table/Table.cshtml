@@ -1,0 +1,135 @@
+﻿@model IPagedList<MapDomain.Entities.Ressource>
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/BackEndLayout.cshtml";
+}
+
+
+@using PagedList.Mvc;
+@using PagedList;
+
+    <h4 class="mt-0 header-title">Example</h4>
+
+    <p>
+
+    </p>
+        @using (Html.BeginForm("Table", "Table", FormMethod.Get))
+        {
+            <input type="text" name="search" placeholder="Enter resource name.."  />
+            <input type="submit" name="submit" value="Search" />
+        }
+
+    <p class="text-muted m-b-30 font-14">This is an experimental awesome solution for responsive tables with complex data.</p>
+    <div class="table-rep-plugin">
+        <div class="table-responsive b-0" data-pattern="priority-columns">
+            <table id="tech-companies-1" class="table  table-striped">
+                <thead>
+                    <tr>
+                        
+                        <th data-priority="1">UserName</th>
+                        <th data-priority="3">Profil</th>
+                        <th data-priority="1">Seniority</th>
+                        <th data-priority="3">Email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(model => item.UserName)
+                            </td>
+                            <td><span>@Html.DisplayFor(model => item.ProfileT)</span></td>
+                            <td><span>@Html.DisplayFor(model => item.Seniority)</span></td>
+                            <td><span>@Html.DisplayFor(model => item.Email)</span></td>
+
+
+                           
+                        <td><span>@Html.ActionLink("Edit", "Edit2", new { id = item.Id})</span></td>
+    @*<td><span>@Html.ActionLink("Delete&Archive ", "Delete2", new { id = item.Id })</span></td>
+    *@
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+
+          
+
+        </div>
+       
+    </div>
+@Html.PagedListPager(Model, i => Url.Action("Table", "Table", new { i, search = Request.QueryString["search"] }))
+
+
+
+@*
+
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>UserName</th>
+                <th>Profil</th>
+                <th>Seniority</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>Zenaida</td>
+                <td>Frank</td>
+                <td>Software Engineer</td>
+                <td>New York</td>
+                <td>$125,250</td>
+            </tr>
+            <tr>
+                <td>Zorita</td>
+                <td>Serrano</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>$115,000</td>
+            </tr>
+            <tr>
+                <td>Jennifer</td>
+                <td>Acosta</td>
+                <td>Junior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>$75,650</td>
+            </tr>
+            <tr>
+                <td>Cara</td>
+                <td>Stevens</td>
+                <td>Sales Assistant</td>
+                <td>New York</td>
+                <td>$145,600</td>
+            </tr>
+            <tr>
+                <td>Hermione</td>
+                <td>Butler</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>$356,250</td>
+            </tr>
+            <tr>
+                <td>Lael</td>
+                <td>Greer</td>
+                <td>Systems Administrator</td>
+                <td>London</td>
+                <td>$103,500</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Alexander</td>
+                <td>Developer</td>
+                <td>San Francisco</td>
+                <td>$86,500</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+*@
